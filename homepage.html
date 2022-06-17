@@ -8,7 +8,8 @@
   <style>
     #navbar{
         width: 100%;
-        /* border: 1px solid; */
+        margin-bottom: 50px;
+        position:fixed;
     }
 
     #nav1{
@@ -24,7 +25,7 @@
     #nav2{
         border: 1px solid rgb(233, 230, 230);
         height: 35px;
-        /* background-color: rgb(235, 232, 232); */
+        background-color: rgb(235, 232, 232);
     }
     #nav2 > img {
         width: 2%;   
@@ -37,18 +38,16 @@
     #nav3{
         border: 1px solid rgb(233, 230, 230);
         display: flex;
-        /* justify-content:; */
+        background-color: white;
     }
-    #nav3 > div:nth-child(1) > img{
+    #nav3 > div > a > img{
         width: 30%;
         margin-top: 10px;
         cursor: pointer;
-        /* border: 1px solid blue; */
     }
-    #nav3 >div > input{
+        #nav3 >div > input{
         width:1100px;
         font-size: 20px;
-        /* border: 1px solid blue; */
         margin-left: -400px;
         margin-right: 50px;
         margin-top:25px;
@@ -57,16 +56,16 @@
         border-radius: 6px;
         border-color: rgb(237, 237, 237);
     }
+
     #acc_section{
-        /* border: 1px solid; */
         margin-top: 20px;
         width: 90%;
         display: flex;
         justify-content: space-between;
         margin-bottom: 15px;
     }
+
     #acc_section > div{
-        /* border: 1px solid green; */
         width: 30%;
     }
     #acc_Section > div > img{
@@ -75,17 +74,14 @@
     }
 
     #acc_section > div >div:first-child{
-        /* border: 1px solid red; */
         height: 70%;
         cursor: pointer;
     }
     .top > img{
         width: 50%;
         height: 80%;
-      
     }
     #acc_section > div >div:last-child{
-        /* border: 1px solid red; */
         height: 30%;
         margin-top: -5px;
         font-size: 15px;
@@ -97,21 +93,21 @@
         height: 30px;
         display: flex;
         justify-content: space-around;
+        background-color: white;
     }
 
     #nav4 > div{
         width: auto;
         padding: 5px;
         cursor: pointer;
-       
     }
+
     #block1{
         width: 80%;
-        /* border: 1px solid; */
         margin: auto;
-        background-image: url("http://cdn.home-designing.com/wp-content/uploads/2021/02/red-dining-room-sets.jpg"); 
-        
+        background-image: url("https://img.freepik.com/free-vector/principal-school-office-interior-empty-room-with-director-table-computer-books-globe-desk-chairs-visitors-bookcases-with-files-folders-potted-plants-cartoon-vector-illustration_107791-3049.jpg?t=st=1655381947~exp=1655382547~hmac=f411a2f6d0e6a4232b0ad9132011fab5e9495e6a816222b6b69bbb65b806090a&w=1380");   
     }
+
     h1{
         text-align: center;
         margin-top: 20px;
@@ -128,17 +124,15 @@
         border-radius: 3px;
         background-color: rgb(245, 245, 245);
         margin-bottom: 30px;
-        cursor: pointer;
     }
     #block2 > div > img{
         width: 100%;
     }
     #block3{
-        /* border: 1px solid; */
         width: 80%;
         margin: auto;
         height: 500px;
-        background-image: url("https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fit,w_730,h_487/at%2Fhouse%20tours%2F2019-10%2FDani%20N%2F4U8A4672"); 
+        background-image: url("https://img.freepik.com/free-photo/sofa-yellow-living-room-interior-with-copy-space_43614-858.jpg?t=st=1655378044~exp=1655378644~hmac=646d481a49c032b2c51d2b7149153a588fcac5309a1dcd1d0dd79d1032e207ce&w=1060"); 
         background-size: 100%;
         margin-top: 20px;
         margin-bottom: 50px;
@@ -163,10 +157,102 @@
         margin-top: -2px;
         cursor: pointer;
     }
+
+    #block5{
+        width: 80%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 250px);
+        gap: 10px;
+        margin-top: 50px;
+    }
+
+    #block5 > div > img{
+        width: 100%;
+        height: 110%;
+    }
+
+    #block5 > div > p{
+     margin-top: -10px;
+     font-size: 18px;
+    }
     
+    #block6{
+        width: 80%;
+        margin: auto;
+        background-image: url("https://img.freepik.com/free-photo/modern-living-room-interior-with-sofa-green-plants-lamp-table-dark-wall-background_41470-1528.jpg?t=st=1655381348~exp=1655381948~hmac=81cde7ce327c2a7cef1df5a45d169a86152cc84d97ebd5f72f0bd27ab44e0125&w=1060");
+        margin-bottom: 50px;
+    }
+
+    #block7{
+        width: 80%;
+        margin:auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 50px);
+        gap:15px;
+        margin-bottom: 50px;
+        margin-top: 30px;
+    }
+    #block7 > div{
+        text-align: center;
+        font-size: 23px;
+        background-color: rgb(244, 244, 244);
+        Padding-top: 10px;
+    }
+    #block8{
+        width:100%;
+        height:350px;
+        display: flex;
+        justify-content: space-around;
+        background-color: rgb(90, 89, 89);
+    }
+    #block8 > div{
+        width:15%;
+        height: 70%;
+        margin: auto;
+        color: white;
+        background-color: rgb(90, 89, 89);
+    }
+
+    #block9{
+        width:100%;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(61, 61, 69);
+    }
+
+    #block9 > div{
+        width:30%;
+        color: white;
+        text-align: left;
+        margin-top: 20px;
+    }
+    #block9 > div:first-child{
+       margin-left: 70px;
+    }
+    #block9 > div:last-child{
+        display: flex;
+        justify-content: space-around;
+    }
+    #block9 > div:last-child > div{
+        width: 35%;
+        height: 50%;
+        margin: auto;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    #red >a{
+        color: red;
+    }
 
   </style>
 </head>
+<html>
 <body>
     <div id="navbar">
         <div id="nav1">
@@ -179,43 +265,46 @@
         </div>
         <div id="nav3">
             <div>
-                <img src="https://logos-download.com/wp-content/uploads/2017/01/Overstock_logo.png" alt="">
-            </div>
+                <a href="homepage.html"> <img src="https://logos-download.com/wp-content/uploads/2017/01/Overstock_logo.png" alt="" width="30%"></a>
+            </div>    
             <div>
                 <input type="text" placeholder="search">
             </div>
+
             <div id="acc_section">
                 <div>
-                    <div class="top"> <img src="https://icons.veryicon.com/png/o/internet--web/prejudice/user-128.png" alt=""></div>
-                    <div>Account</div>
+                  <div class="top"><img src="https://icons.veryicon.com/png/o/internet--web/prejudice/user-128.png"alt=""></div>
+                    <div><a href="loginpage.html">Account</a></div>
                 </div>
                 <div>
-                    <div class="top"> <img src="https://icons.veryicon.com/png/o/commerce-shopping/fine-edition-mall-icon/wishlist-1.png" alt=""></div>
-                    <div>Lists</div>
+                    <div class="top"><img src="https://icons.veryicon.com/png/o/commerce-shopping/fine-edition-mall-icon/wishlist-1.png" alt=""></div>
+                    <div><a href="wishlist.html">Lists</a></div>
                 
                 </div>
                 <div>
-                    <div class="top"> <img src="https://icons.veryicon.com/png/128/commerce-shopping/merchant-product-icon-library/cart-27.png" alt=""></div>
-                    <div>Cart</div>
+                    <div class="top"><img src="https://icons.veryicon.com/png/128/commerce-shopping/merchant-product-icon-library/cart-27.png" alt=""></div>
+                    <div><a href="addtocart.html">Cart</a></div>
                 </div>
             </div>
         </div>
         <div id="nav4">
-            <div>Furniture</div>
-            <div>Rugs</div>
-            <div>Decor</div>
-            <div>Bedding</div>
-            <div>Home Improvement</div>
-            <div>Kitchen</div>
-            <div>Outdoor</div>
-            <div>Lighting</div>
-            <div>Kids & Baby</div>
-            <div>More</div>
-            <div>Ideas</div>
-            <div style="color:red;">Sales & Deals</div>
+            <div style="color:black"><a href="furniture.html">Furniture</a></div>
+            <div style="color:black"><a href="rugs.html">Rugs</a></div>
+            <div style="color:black"><a href="decor.html">Decor</a></div>
+            <div style="color:black"><a href="bedding.html">Bedding</a></div>
+            <div style="color:black"><a href="homeimprovement.html">Home Improvement</a></div>
+            <div style="color:black"><a href="kitchen.html">Kitchen</a></div>
+            <div style="color:black"><a href="outdoor.html">Outdoor</a></div>
+            <div style="color:black"><a href="lighting.html">Lighting</a></div>
+            <div style="color:black"><a href="https://www.overstock.com/kids">Kids & Baby</a></div>
+            <div style="color:black"><a href="https://www.overstock.com/shop-all-departments">More</a></div>
+            <div style="color:black"><a href="https://www.overstock.com/guides/tips-and-ideas">Ideas</a></div>
+            <div id="red"><a href="https://www.overstock.com/deals">Sales & Deals</a></div>
         </div>
     </div>
-    <div id="block1"><img src="https://ak1.ostkcdn.com/img/mxc/05302022-HP-A1-INTL-1400x550.svg" alt=""></div>
+    <br><br>
+    <br><br><br><br><br><br><br>
+    <br><br><br><div id="block1"><img src="https://ak1.ostkcdn.com/img/mxc/05302022-HP-A1-INTL-1400x550.svg" alt=""></div>
     <h1>Limited Time Deals</h1>
     <div id="block2">
         <div><img src="https://ak1.ostkcdn.com/img/mxc/05302022_HB_DOMESTIC_1_20_off.svg?imwidth=1920" alt=""></div>
@@ -279,17 +368,87 @@
     </div>
     <h1>New Ways to Bring Home Spring</h1>
     <div id="block5">
+        <div><img src="https://ak1.ostkcdn.com/img/mxc/03282022_HP_Editorial_Frame_1.jpg?imwidth=1920" alt=""></div>
+        <div><img src="https://ak1.ostkcdn.com/img/mxc/03282022_HP_Editorial_Frame_8.jpg?imwidth=1920" alt=""></div>
+        <div><img src="https://ak1.ostkcdn.com/img/mxc/03282022_HP_Editorial_Frame_3.jpg?imwidth=1920" alt=""></div>
+        <div><img src="https://ak1.ostkcdn.com/img/mxc/03282022_HP_Editorial_Frame_2.jpg?imwidth=1920" alt=""></div>
         <div>
-            <div></div>
-            <div></div>
+            <h1>Washable Rugs</h1>
+            <p>Say goodbuy to dirty rug blues with carpets that you can clean in the washer</p>
         </div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div>
+            <h1>Gifts for Plant  Lovers</h1>
+            <p>Treat the green thumbs  in your life to these perfect plant focused gifts</p>
+        </div>
+        <div>
+            <h1>Wicker Patio Furniture</h1>
+            <p>Save on the long lasting comfort with the natural texture with patio furniture</p>
+        </div>
+        <div>
+            <h1>Antirondac Chairs</h1>
+            <p>Refesh your outdoor seatings with this lawn and patio classic</p>
+        </div>
+    </div>
+    <div id="block6">
+        <img src="https://ak1.ostkcdn.com/img/mxc/05302022_SummerDecor_Desktop.svg?imwidth=1920" alt="">
+    </div>
+    <h1>Trending Seaches</h1>
+    <div id="block7">
+        <div>Outdoor Rugs</div>
+        <div>Wallpaper</div>
+        <div>Patio Furnitures</div>
+        <div>Matresses</div>
+        <div>TV Stands</div>
+        <div>Outdoor Lightings</div>
+        <div>Outdoor Dining Sets</div>
+        <div>Mirrors</div>
+        <div>Portable Air Conditioners</div>
+        <div>Bathroom Vanities</div>
+        <div>Computer Desks</div>
+        <div>Area Rugs</div>
+    </div>
+    <div id="block8">
+        <div>
+            <h4>MY  ACCOUNT</h4>
+            <p>Order and returns</p>
+            <p>Email Preferences</p>
+            <p>Account settings</p>
+        </div>
+        <div>
+            <h4>LET US HELP</h4>
+            <p>Contact Customer Care</p>
+            <p>Shipping Information</p>
+            <p>Return Policy</p>
+            <p>International Help</p>
+            <p>Accessibility</p>
+        </div>
+        <div>
+            <h4>COMPANY  INFORMATION</h4>
+            <p>About Overstock</p>
+            <p>Contact Us</p>
+            <p>Careers</p>
+            <p>Investor Relations</p>
+            <p>Sell Your Products</p>
+        </div>
+        <div>
+            <h4>MORE WAYS TO SHOP</h4>
+            <p>Tips and Ideas</p>
+            <p>Deals</p>
+            <p>Clearances</p>
+            <p>New Arrivals</p>
+        </div>
+    </div>
+    <div id="block9">
+        <div>
+            <p>© Copyright 2022, Overstock.com®,Inc.</p>
+            <p>799 Colliseum Way Midvale, UT 84047 | 1-800-843-2446</p>
+        </div>
+        <div>
+            <div>Privacy Policy</div>
+            <div>Terms & conditions</div>
+            <div>*Promotion Terms</div>
+        </div>
     </div>
 
-</body>
+    </body>
 </html>
-<script>
-
-</script>
