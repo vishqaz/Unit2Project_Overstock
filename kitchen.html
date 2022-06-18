@@ -1,472 +1,601 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="icon" style="width:30px" href="https://play-lh.googleusercontent.com/r1RyQV0Tva6dHjjLQ4xikDyc2uU9OMXxUmnvDM3edGwfBI6tZvDC9XGltno9pH-jkw" type="image/icon type">
+
     <style>
-*{
-    box-sizing: border-box;
-}
-div:hover{
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-button{
-    cursor: pointer;
-    width: 100%;
-    padding:15px 0px;
-    border: none;
-}
-
-      #div1>div>  p{
-          cursor: pointer; 
-          font-size: 20px; 
-           padding:5px ;
-           margin-top:-20px; 
-          
+        * {
+            box-sizing: border-box;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         }
-        #div1>div>  p:hover{
-            background-color:#f9fafb;
+        
+        div:hover {
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         }
-        #div1{
+        
+        button {
+            cursor: pointer;
+            width: 100%;
+            padding: 15px 0px;
+            border: none;
+        }
+        
+        #div1>div>p {
+            cursor: pointer;
+            font-size: 20px;
+            padding: 5px;
+            margin-top: -20px;
+        }
+        
+        #div1>div>p:hover {
+            background-color: #f9fafb;
+        }
+        
+        #div1 {
             display: flex;
-            width:90%;
-            margin:auto;
+            width: 90%;
+            margin: auto;
         }
-
-        h3{
-            color:brown;
+        
+        h3 {
+            color: brown;
         }
-        #div1>div>p:last-child{
+        
+        #div1>div>p:last-child {
             font-weight: bold;
-            color:#c7202c;
+            color: #c7202c;
         }
-        #div1>div:nth-child(1){
+        
+        #div1>div:nth-child(1) {
             /* background-color:gray; */
             margin-right: 10px;
-            width:25%;
+            width: 25%;
             /* border:1px solid black; */
         }
-        #div1>div:nth-child(2){
-       width:50%;
-       margin-right: 20px;
-       /* border:1px solid black; */
+        
+        #div1>div:nth-child(2) {
+            width: 50%;
+            margin-right: 20px;
+            /* border:1px solid black; */
         }
-        #div1>div:nth-child(2)>img{
-            width:100%;
+        
+        #div1>div:nth-child(2)>img {
+            width: 100%;
             /* height:100%; */
             cursor: pointer;
         }
-        #div1>div:nth-child(3){
-            width:22.5%;
+        
+        #div1>div:nth-child(3) {
+            width: 22.5%;
             text-align: center;
-            
             /* border:1px solid red */
         }
-        #div1>div:nth-child(3)>div>p{
-           
+        
+        #div1>div:nth-child(3)>div>p {
             font-size: 30px;
             margin-bottom: -20px;
         }
-        #div1>div:nth-child(3)>div:nth-child(1){
-            border:1px solid transparent;
+        
+        #div1>div:nth-child(3)>div:nth-child(1) {
+            border: 1px solid transparent;
             height: 50%;
             background-color: #cee8ff;
             margin-bottom: 10px;
-         
-            
         }
-        #div1>div:nth-child(3)>div:nth-child(1)>img{
-            width:100%;
+        
+        #div1>div:nth-child(3)>div:nth-child(1)>img {
+            width: 100%;
             cursor: pointer;
         }
-        #div1>div:nth-child(3)>div:nth-child(2)>img{
-            width:100%;
+        
+        #div1>div:nth-child(3)>div:nth-child(2)>img {
+            width: 100%;
             cursor: pointer;
             margin-top: 50px;
         }
-        #div1>div:nth-child(3)>div:nth-child(2){
-            background-color:#eaeaea;
+        
+        #div1>div:nth-child(3)>div:nth-child(2) {
+            background-color: #eaeaea;
             height: 50%;
             /* border: 1px solid  */
         }
         
-     #div2{
-        width:90%;
-        /* height: 100px; */
-        /* border: 1px solid red; */
-        margin:auto;
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
-        grid-template-rows: repeat(3,auto);
-        gap:10px;
-     }
-     #div2>div{
-         border: 1px solid transparent 
-     }
-     #div2>div>img{
-        width:100%;
-        cursor: pointer;
-     }
-div+h2{
-    text-align: center;
-    margin:50px 
-}
-     #div3{
-        width:90%;
-        /* height: 100px; */
-        /* border: 1px solid red; */
-        margin:auto;
-        padding-top: 50px;
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(1,auto);
-        gap:10px;
-     }
-     #div4{
-        width:90%;
-        /* height: 100px; */
-        /* border: 1px solid red; */
-        margin:auto;
-        padding-top: 70px;
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(1,auto);
-        gap:10px;
-     }
-     #div3>div:nth-child(1)>img{
-        width:100%
-     }
-     #div4>div:nth-child(2)>img{
-        width:100%
-     }
-     p+button{
-    width:15%;
-    border: 1px solid gray;
-    border-radius: 5px;
-    background-color: transparent;
-   }
-
-   #div5{
-        width:90%;
-        /* height: 100px; */
-        /* border: 1px solid red; */
-        margin:auto;
-        padding-top: 45px;
-        display: grid;
-        grid-template-columns: repeat(6,1fr);
-        grid-template-rows: repeat(2,auto);
-        gap:10px;
-        padding-bottom: 50px;
-        text-align: center;
-        font-size: 20px;
-     }
-     #more{
-        padding-top: 55px;
-        margin: auto;
-        text-align: center;
-        font-size: 25px;
-     }
-
-     #div5>div>img{
-        width:100%;
-        cursor: pointer;
-     }
-     #div6{
+        #div2 {
+            width: 90%;
+            /* height: 100px; */
+            /* border: 1px solid red; */
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, auto);
+            gap: 10px;
+        }
         
-         background-color:#545658; 
-      color:white;
-       padding: 20px 0px 0px 80px;
-        /* border: 1px solid red; */
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
-        grid-template-rows: repeat(1,auto);
-        font-size: 13px;
-     }
-
-     #kitchen{
-      margin-left: 75px;
-      padding-top: 150px;
-      font-size: 38px;
+        #div2>div {
+            border: 1px solid transparent
+        }
         
-     }
-    
+        #div2>div>img {
+            width: 100%;
+            cursor: pointer;
+        }
+        
+        div+h2 {
+            text-align: center;
+            margin: 50px
+        }
+        
+        #div3 {
+            width: 90%;
+            /* height: 100px; */
+            /* border: 1px solid red; */
+            margin: auto;
+            padding-top: 50px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(1, auto);
+            gap: 10px;
+        }
+        
+        #div4 {
+            width: 90%;
+            /* height: 100px; */
+            /* border: 1px solid red; */
+            margin: auto;
+            padding-top: 70px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(1, auto);
+            gap: 10px;
+        }
+        
+        #div3>div:nth-child(1)>img {
+            width: 100%
+        }
+        
+        #div4>div:nth-child(2)>img {
+            width: 100%
+        }
+        
+        p+button {
+            width: 15%;
+            border: 1px solid gray;
+            border-radius: 5px;
+            background-color: transparent;
+        }
+        
+        #div5 {
+            width: 90%;
+            /* height: 100px; */
+            /* border: 1px solid red; */
+            margin: auto;
+            padding-top: 45px;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(2, auto);
+            gap: 10px;
+            padding-bottom: 50px;
+            text-align: center;
+            font-size: 20px;
+        }
+        
+        #more {
+            padding-top: 55px;
+            margin: auto;
+            text-align: center;
+            font-size: 25px;
+        }
+        
+        #div5>div>img {
+            width: 100%;
+            cursor: pointer;
+        }
+        
+        #div8 {
+            background-color: #545658;
+            color: white;
+            padding: 50px 0px 0px 80px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(1, auto);
+        }
+        
+        #div8>div>p {
+            margin-top: 15px;
+            font-size: 12px;
+        }
+        
+        #div8>div>p:first-child {
+            font-size: 14px;
+        }
+        
+        #div8>div {
+            padding-bottom: 30px;
+        }
+        
+        #div8>div>p>a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        #block9 {
+            width: 100%;
+            height: 90px;
+            display: flex;
+            background-color: rgb(61, 61, 69);
+        }
+        
+        #block9>div:first-child {
+            margin-top: 20px;
+            margin-left: 5%;
+            margin-top: 17px;
+            margin-right: 30%;
+            width: 30%;
+            color: white;
+        }
+        
+        #block9>div:last-child {
+            display: flex;
+            margin-top: 20px;
+        }
+        
+        #block9>div>p {
+            font-size: 12px;
+        }
+        
+        #block9>div>div {
+            font-size: 12px;
+            margin-top: 20px;
+            color: white;
+            margin-left: 20px;
+            display: flex;
+        }
+        
+        #block9>div>div>a {
+            text-decoration: none;
+            color: white;
+        }
+        
+        #block9>div>div>div>img {
+            max-width: 30px;
+            width: 100%;
+            margin-top: -5px;
+        }
+        
+        #block9>div>div>div>p {
+            margin-top: -1px;
+        }
+        
+        #lastindia>div>div>img {
+            max-width: 30px;
+            width: 100%;
+            margin-top: -5px;
+        }
+        
+        #lastindia>div>p>a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        #kitchen {
+            margin-left: 75px;
+            padding-top: 150px;
+            font-size: 38px;
+        }
     </style>
 </head>
+
 <body>
     <h1 id="kitchen">Kitchen & Dining</h1>
     <div id="div1">
         <div>
-       <h2>Featured Categories</h2>
-        <p id="p">Kitchen & Dining Furniture</p>
-        <p>Small Appliances</p>
-        <p>Kitchen Storage</p>
-        <p>Major Appliances</p>
-        <p>Cookware & Bakeware</p>
-        <p>Cooking Essentials</p>
-        <p>Kitchen & Table Linens</p>
-        <p>Serveware</p>
-        <p>Glassware & Drinkware</p>
-        <p>Outdoor Cooking</p>
-        <p>Cutlery & Accessories</p>
-        <p>Bar & Wine</p>
-        <p>Flatware Sets</p>
-        <p>Microwaves</p>
-        <h3>Shop Kitchen & Dining on Sale</h3>
-        
- </div>
-        
+            <h2>Featured Categories</h2>
+            <p id="p">Kitchen & Dining Furniture</p>
+            <p>Small Appliances</p>
+            <p>Kitchen Storage</p>
+            <p>Major Appliances</p>
+            <p>Cookware & Bakeware</p>
+            <p>Cooking Essentials</p>
+            <p>Kitchen & Table Linens</p>
+            <p>Serveware</p>
+            <p>Glassware & Drinkware</p>
+            <p>Outdoor Cooking</p>
+            <p>Cutlery & Accessories</p>
+            <p>Bar & Wine</p>
+            <p>Flatware Sets</p>
+            <p>Microwaves</p>
+            <h3>Shop Kitchen & Dining on Sale</h3>
+
+        </div>
+
         <div>
             <h2>Extra 15% off</h2>
             <p>Select Kitchen & Dining*</p>
-        <img src="https://ak1.ostkcdn.com/img/mxc/03242022_SPRING2022_KITCHEN_Hero_Desktop.jpg?imwidth=680&impolicy=medium?imwidth=750" alt="Error">
-        <!-- <button>Shop Now</button>    -->
+            <img src="https://ak1.ostkcdn.com/img/mxc/03242022_SPRING2022_KITCHEN_Hero_Desktop.jpg?imwidth=680&impolicy=medium?imwidth=750" alt="Error">
+            <!-- <button>Shop Now</button>    -->
         </div>
-   
+
         <div>
             <div>
                 <p>Need Inspiration?</p>
                 <h1>Virtual Showroom</h1>
                 <img src="https://ak1.ostkcdn.com/img/mxc/2022-04-12-temporary-virtual-showcase.png?imwidth=384" alt="">
             </div>
-           <div>
-            <img src="https://ak1.ostkcdn.com/img/mxc/03242022_SPRING2022_KITCHEN_MM_022.png?imwidth=320&impolicy=medium?imwidth=384" alt="">
-          <p>Small but Mighty</p>
-          <h1>Appliances</h1>
-        </div>
-           
+            <div>
+                <img src="https://ak1.ostkcdn.com/img/mxc/03242022_SPRING2022_KITCHEN_MM_022.png?imwidth=320&impolicy=medium?imwidth=384" alt="">
+                <p>Small but Mighty</p>
+                <h1>Appliances</h1>
+            </div>
+
         </div>
     </div>
     <h2>Popular Kitchen & Dining Categories</h2>
-<div id="div2">
-    <!-- kitchenData1 -->
-</div>
-<div id="div3">
-    <div><img src="https://ak1.ostkcdn.com/img/mxc/03242022_SPRING2022_KITCHEN_BG1.jpg?imwidth=1024&impolicy=medium" alt=""></div>
-    <div>
-    <h2>Bar Stools Buying Guide</h2>
-    <p>It's often the final step in completing your home bar, and one of the most important: choosing your bar stools. With so many bar stool styles and heights out there, how do you choose a set that will keep your guests comfortable and eager to visit again and again? These tips will help you confidently choose stylish bar stools for your kitchen or home bar.</p>
-   <button>Read More</button>
-</div> 
-</div>
-
-<div id="div4">
-    <div>
-    
-        <h2>Best Kitchen & Dining Sets for Small Spaces</h2>
-        <p> If you have a small kitchen or dining room, there are three things to consider when choosing a table: height, adaptability, and shape. Read on to learn how to choose small dining tables and chairs that will make the most of your limited space.</p>
-       <button>Read More</button></div>
-    <div>
-        <img src="https://ak1.ostkcdn.com/img/mxc/03242022_SPRING2022_KITCHEN_BG2.jpg?imwidth=1024&impolicy=medium" alt="">
-</div >
-</div>
-
-<h1 id="more">Shop More Kitchen & Dining</h1>
-
-<div id="div5"></div>
- <!-- kitchenData2 -->
-
-</div>
-<div id="div6">
-    <div>
-        <p>MY ACCOUNT</p>
-        <p>Orders & Returns</p>
-        <p>Email Preferences</p>
-        <p>Account Settings</p>
+    <div id="div2">
+        <!-- kitchenData1 -->
     </div>
-    <div>
-        <p>LET US HELP</p>
-        <p>Contact Customer Care</p>
-        <p>Shipping Information</p>
-        <p>Return Policy</p>
-        <p>International Help</p>
-        <p>Accessibility</p>
+    <div id="div3">
+        <div><img src="https://ak1.ostkcdn.com/img/mxc/03242022_SPRING2022_KITCHEN_BG1.jpg?imwidth=1024&impolicy=medium" alt=""></div>
+        <div>
+            <h2>Bar Stools Buying Guide</h2>
+            <p>It's often the final step in completing your home bar, and one of the most important: choosing your bar stools. With so many bar stool styles and heights out there, how do you choose a set that will keep your guests comfortable and eager to
+                visit again and again? These tips will help you confidently choose stylish bar stools for your kitchen or home bar.</p>
+            <button>Read More</button>
+        </div>
     </div>
-    <div>
-        <p>COMPANY INFORMATION</p>
-        <p>About Overstock™</p>
-        <p>Contact Us</p>
-        <p>Careers</p>
-        <p>Investor Relations</p>
-        <p>Sell Your Products</p>
-        <p>Supply Chain Transparency</p>
+
+    <div id="div4">
+        <div>
+
+            <h2>Best Kitchen & Dining Sets for Small Spaces</h2>
+            <p> If you have a small kitchen or dining room, there are three things to consider when choosing a table: height, adaptability, and shape. Read on to learn how to choose small dining tables and chairs that will make the most of your limited space.</p>
+            <button>Read More</button></div>
+        <div>
+            <img src="https://ak1.ostkcdn.com/img/mxc/03242022_SPRING2022_KITCHEN_BG2.jpg?imwidth=1024&impolicy=medium" alt="">
+        </div>
     </div>
-    <div>
-        <p>MORE WAYS TO SHOP</p>
-        <p>Tips & Ideas</p>
-        <p>Deals
-        </p>
-        <p>Clearance</p>
-        <p>New Arrivals</p>
+
+    <h1 id="more">Shop More Kitchen & Dining</h1>
+
+    <div id="div5"></div>
+    <!-- kitchenData2 -->
+
+    <div id="div8">
+        <div>
+            <p>MY ACCOUNT</p>
+            <p>Orders & Returns</p>
+            <p>
+                <a href="https://www.overstock.com/5522/static.html">Email Preferences</a>
+            </p>
+            <p>Account Settings</p>
+        </div>
+        <div>
+            <p>LET US HELP</p>
+            <p>
+                <a href="https://help.overstock.com/help/s/article/International-Customer-Care">Contact Customer Care</a>
+            </p>
+            <p>
+                <a href="https://overstock.force.com/help/s/article/International-Order-Shipping-Information">Shipping Information</a>
+            </p>
+            <p>
+                <a href="https://help.overstock.com/help/s/article/International-Returns">Return Policy</a>
+            </p>
+            <p>
+                <a href="https://help.overstock.com/help/s/article/International-Help-Home">International Help</a>
+            </p>
+            <p>
+                <a href="https://www.overstock.com/accessibility">Accessibility</a>
+            </p>
+        </div>
+        <div>
+            <p>COMPANY INFORMATION</p>
+            <p>About Overstock™</p>
+            <p>Contact Us</p>
+            <p>Careers</p>
+            <p>Investor Relations</p>
+            <p>Sell Your Products</p>
+            <p>Supply Chain Transparency</p>
+        </div>
+        <div>
+            <p>MORE WAYS TO SHOP</p>
+            <p>Tips & Ideas</p>
+            <p>Deals
+            </p>
+            <p>Clearance</p>
+            <p>New Arrivals</p>
+        </div>
     </div>
-</div>
+    <div id="block9">
+        <div>
+            <p>© Copyright 2022, Overstock.com®,Inc.</p>
+            <p>799 Colliseum Way Midvale, UT 84047 | 1-800-843-2446</p>
+        </div>
+        <div>
+            <div>
+                <a href="https://help.overstock.com/help/s/article/PRIVACY-AND-SECURITY-POLICY">Privacy Policy</a>
+            </div>
+            <div>
+                <a href="https://help.overstock.com/help/s/article/TERMS-AND-CONDITIONS">Terms & conditions</a>
+            </div>
+            <div>
+                <a href="https://www.overstock.com/88255/static.html">*Promotion Terms</a>
+            </div>
+            <div id="lastindia">
+                <div>
+                    <p>
+                        <a href="https://www.overstock.com/intlcountryselect">Ship to:</a>
+                    </p>
+                </div>
+                <div>
+                    <img src="https://ak1.ostkcdn.com/img/mxc/intFlag_IN.gif" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
+
 </html>
 <script>
-    kitchenData1=[
-        {
-            img:"https://ak1.ostkcdn.com/img/mxc/12202021_WINTER2022_KITCHEN_PopCat_1_SmallAppliances.jpg?imwidth=400&impolicy=medium",
-            button:"Small Appliance"
+    kitchenData1 = [{
+            img: "https://ak1.ostkcdn.com/img/mxc/12202021_WINTER2022_KITCHEN_PopCat_1_SmallAppliances.jpg?imwidth=400&impolicy=medium",
+            button: "Small Appliance"
         },
-    
+
         {
-            img:"https://ak1.ostkcdn.com/img/mxc/12202021_WINTER2022_KITCHEN_PopCat_2_Dinnerware.jpg?imwidth=400&impolicy=medium",
-            button:"Dinnerware"
+            img: "https://ak1.ostkcdn.com/img/mxc/12202021_WINTER2022_KITCHEN_PopCat_2_Dinnerware.jpg?imwidth=400&impolicy=medium",
+            button: "Dinnerware"
         },
-        
+
         {
-           img:"https://ak1.ostkcdn.com/img/mxc/03242022_SPRING2022_KITCHEN_PopCat_3.jpg?imwidth=400&impolicy=medium",
-           button:"Cookware"
+            img: "https://ak1.ostkcdn.com/img/mxc/03242022_SPRING2022_KITCHEN_PopCat_3.jpg?imwidth=400&impolicy=medium",
+            button: "Cookware"
         },
-        
+
         {
-            img:"https://ak1.ostkcdn.com/img/mxc/10122021_KITCHEN_PopCat_3_Mixers.jpg?imwidth=400&impolicy=medium",
-            button:"Mixers"
+            img: "https://ak1.ostkcdn.com/img/mxc/10122021_KITCHEN_PopCat_3_Mixers.jpg?imwidth=400&impolicy=medium",
+            button: "Mixers"
         },
-        
+
         {
-            img:"https://ak1.ostkcdn.com/img/mxc/12202021_WINTER2022_KITCHEN_PopCat_4_CookingEssentials.jpg?imwidth=400&impolicy=medium",
-            button:"Cooking Essentials"
+            img: "https://ak1.ostkcdn.com/img/mxc/12202021_WINTER2022_KITCHEN_PopCat_4_CookingEssentials.jpg?imwidth=400&impolicy=medium",
+            button: "Cooking Essentials"
         },
-        
+
         {
-            img:"https://ak1.ostkcdn.com/img/mxc/12202021_WINTER2022_KITCHEN_PopCat_5_Serveware.jpg?imwidth=400&impolicy=medium",
-            button:"Serveware"
+            img: "https://ak1.ostkcdn.com/img/mxc/12202021_WINTER2022_KITCHEN_PopCat_5_Serveware.jpg?imwidth=400&impolicy=medium",
+            button: "Serveware"
         },
-        
+
         {
-            img:"https://ak1.ostkcdn.com/img/mxc/12202021_WINTER2022_KITCHEN_PopCat_6_Bakeware.jpg?imwidth=400&impolicy=medium",
-            button:"Bakeware"
+            img: "https://ak1.ostkcdn.com/img/mxc/12202021_WINTER2022_KITCHEN_PopCat_6_Bakeware.jpg?imwidth=400&impolicy=medium",
+            button: "Bakeware"
         },
-        
+
         {
-            img:"https://ak1.ostkcdn.com/img/mxc/03232020-gnp-kitchendining-PopCat_7.jpg?imwidth=400&impolicy=medium",
-            button:"Ranges & Ovens"
+            img: "https://ak1.ostkcdn.com/img/mxc/03232020-gnp-kitchendining-PopCat_7.jpg?imwidth=400&impolicy=medium",
+            button: "Ranges & Ovens"
+        }, {
+            img: "https://ak1.ostkcdn.com/img/mxc/12202021_WINTER2022_KITCHEN_PopCat_7_TableLinensandDecor.jpg?imwidth=400&impolicy=medium",
+            button: "Table Linens & Decor"
         },
+
         {
-            img:"https://ak1.ostkcdn.com/img/mxc/12202021_WINTER2022_KITCHEN_PopCat_7_TableLinensandDecor.jpg?imwidth=400&impolicy=medium",
-            button:"Table Linens & Decor"
+            img: "https://ak1.ostkcdn.com/img/mxc/09062021_FALL2021_Kitchen_PopCat_7.jpg?imwidth=400&impolicy=medium",
+            button: "Flatware"
         },
-        
+
         {
-            img:"https://ak1.ostkcdn.com/img/mxc/09062021_FALL2021_Kitchen_PopCat_7.jpg?imwidth=400&impolicy=medium",
-            button:"Flatware"
+            img: "https://ak1.ostkcdn.com/img/mxc/03232020-gnp-kitchendining-PopCat_8.jpg?imwidth=400&impolicy=medium",
+            button: "Major Applliances"
         },
-        
+
         {
-            img:"https://ak1.ostkcdn.com/img/mxc/03232020-gnp-kitchendining-PopCat_8.jpg?imwidth=400&impolicy=medium",
-            button:"Major Applliances"
-        },
-        
-        {
-            img:"https://ak1.ostkcdn.com/img/mxc/12202021_WINTER2022_KITCHEN_PopCat_8_GlassesandBarware.jpg?imwidth=400&impolicy=medium",
-            button:"Glasses & Barware"
+            img: "https://ak1.ostkcdn.com/img/mxc/12202021_WINTER2022_KITCHEN_PopCat_8_GlassesandBarware.jpg?imwidth=400&impolicy=medium",
+            button: "Glasses & Barware"
         },
 
     ]
-  
-    kitchenData2=[
-        {
-            img:"https://ak1.ostkcdn.com/img/mxc/03232020-gnp-kitchendining-175x175_otherPopular7.jpg?imwidth=200&impolicy=medium",
-            button:"Counter Accessories"
+
+    kitchenData2 = [{
+            img: "https://ak1.ostkcdn.com/img/mxc/03232020-gnp-kitchendining-175x175_otherPopular7.jpg?imwidth=200&impolicy=medium",
+            button: "Counter Accessories"
         },
-    
+
         {
-            img:"https://ak1.ostkcdn.com/img/mxc/03232020-gnp-kitchendining-175x175_otherPopular8.jpg?imwidth=200&impolicy=medium",
-            button:"Storage Canisters"
+            img: "https://ak1.ostkcdn.com/img/mxc/03232020-gnp-kitchendining-175x175_otherPopular8.jpg?imwidth=200&impolicy=medium",
+            button: "Storage Canisters"
         },
-        
+
         {
-            img:"https://ak1.ostkcdn.com/img/mxc/03232020-gnp-kitchendining-175x175_otherPopular9.jpg?imwidth=200&impolicy=medium",
-            button:"Dish Racks"
+            img: "https://ak1.ostkcdn.com/img/mxc/03232020-gnp-kitchendining-175x175_otherPopular9.jpg?imwidth=200&impolicy=medium",
+            button: "Dish Racks"
         },
-        
+
         {
-            img:"https://ak1.ostkcdn.com/img/mxc/03232020-gnp-kitchendining-175x175_otherPopular10.jpg?imwidth=200&impolicy=medium",
-            button:"Trans Cans"
+            img: "https://ak1.ostkcdn.com/img/mxc/03232020-gnp-kitchendining-175x175_otherPopular10.jpg?imwidth=200&impolicy=medium",
+            button: "Trans Cans"
         },
-        
+
         {
-            img:"https://ak1.ostkcdn.com/img/mxc/03232020-gnp-kitchendining-175x175_otherPopular11.jpg?imwidth=200&impolicy=medium",
-            button:"Wine Racks"
+            img: "https://ak1.ostkcdn.com/img/mxc/03232020-gnp-kitchendining-175x175_otherPopular11.jpg?imwidth=200&impolicy=medium",
+            button: "Wine Racks"
         },
-        
+
         {
-            img:"https://ak1.ostkcdn.com/img/mxc/03232020-gnp-kitchendining-175x175_otherPopular12.jpg?imwidth=200&impolicy=medium",
-            button:"Pot Racks"
+            img: "https://ak1.ostkcdn.com/img/mxc/03232020-gnp-kitchendining-175x175_otherPopular12.jpg?imwidth=200&impolicy=medium",
+            button: "Pot Racks"
         },
-        
+
         {
-            img:"https://ak1.ostkcdn.com/img/mxc/03232020-gnp-kitchendining-175x175_otherPopular13.jpg?imwidth=200&impolicy=medium",
-            button:"Islans"
+            img: "https://ak1.ostkcdn.com/img/mxc/03232020-gnp-kitchendining-175x175_otherPopular13.jpg?imwidth=200&impolicy=medium",
+            button: "Islans"
         },
-        
+
         {
-            img:"https://ak1.ostkcdn.com/img/mxc/03232020-gnp-kitchendining-175x175_otherPopular14.jpg?imwidth=200&impolicy=medium",
-            button:"Cabinets"
-        },
-        {
-            img:"https://ak1.ostkcdn.com/img/mxc/03232020-gnp-kitchendining-175x175_otherPopular15.jpg?imwidth=200&impolicy=medium",
-            button:"Butcher Blocks"
-        },
-        {
-            img:"https://ak1.ostkcdn.com/img/mxc/03232020-gnp-kitchendining-175x175_otherPopular16.jpg?imwidth=200&impolicy=medium",
-            button:"Carts"
-        },
-        {
-            img:"https://ak1.ostkcdn.com/img/mxc/03232020-gnp-kitchendining-175x175_otherPopular17.jpg?imwidth=200&impolicy=medium",
-            button:"Kitchen Shelves"
-        },
-        {
-            img:"https://ak1.ostkcdn.com/img/mxc/071718_sale_square.svg",
-            button:"Shop All Kitchen & Dining on sale"
+            img: "https://ak1.ostkcdn.com/img/mxc/03232020-gnp-kitchendining-175x175_otherPopular14.jpg?imwidth=200&impolicy=medium",
+            button: "Cabinets"
+        }, {
+            img: "https://ak1.ostkcdn.com/img/mxc/03232020-gnp-kitchendining-175x175_otherPopular15.jpg?imwidth=200&impolicy=medium",
+            button: "Butcher Blocks"
+        }, {
+            img: "https://ak1.ostkcdn.com/img/mxc/03232020-gnp-kitchendining-175x175_otherPopular16.jpg?imwidth=200&impolicy=medium",
+            button: "Carts"
+        }, {
+            img: "https://ak1.ostkcdn.com/img/mxc/03232020-gnp-kitchendining-175x175_otherPopular17.jpg?imwidth=200&impolicy=medium",
+            button: "Kitchen Shelves"
+        }, {
+            img: "https://ak1.ostkcdn.com/img/mxc/071718_sale_square.svg",
+            button: "Shop All Kitchen & Dining on sale"
         },
     ]
 
 
 
-   
 
-displayRugs(kitchenData1)
- 
-function displayRugs(data){
-    kitchenData1.forEach(function(el){
-        let div2 = document.querySelector('#div2');
-        
-        let div = document.createElement('div');
-        let image = document.createElement('img');
-        image.src=el.img
-        let butto = document.createElement('button');
-        butto.innerText=el.button;
-        div.append(image,butto)
-         div2.append(div)
-     })
-}
+
+    displayRugs(kitchenData1)
+
+    function displayRugs(data) {
+        kitchenData1.forEach(function(el) {
+            let div2 = document.querySelector('#div2');
+
+            let div = document.createElement('div');
+            let image = document.createElement('img');
+            image.src = el.img
+            let butto = document.createElement('button');
+            butto.innerText = el.button;
+            div.append(image, butto)
+            div2.append(div)
+        })
+    }
 
     shopMore(kitchenData2)
 
-    function shopMore(data){
-        kitchenData2.forEach(function(el){
-        let div2 = document.querySelector('#div5');
-        
-        let div = document.createElement('div');
-        let image = document.createElement('img');
-        image.src=el.img
-        let butto = document.createElement('p');
-        butto.innerText=el.button;
-        div.append(image,butto)
-         div2.append(div)
-     })
-    }
-    let div= document.querySelectorAll('div');
+    function shopMore(data) {
+        kitchenData2.forEach(function(el) {
+            let div2 = document.querySelector('#div5');
 
-    for(let i=0;i<div.length;i++)
-    {
+            let div = document.createElement('div');
+            let image = document.createElement('img');
+            image.src = el.img
+            let butto = document.createElement('p');
+            butto.innerText = el.button;
+            div.append(image, butto)
+            div2.append(div)
+        })
+    }
+    let div = document.querySelectorAll('div');
+
+    for (let i = 0; i < div.length; i++) {
         div[i].addEventListener("click", rugProduct)
     }
 
-    function rugProduct(){
-       window.location.href="rugProduct.html"
+    function rugProduct() {
+        window.location.href = "rugProduct.html"
     }
 </script>

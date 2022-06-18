@@ -1,223 +1,316 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="icon" style="width:30px" href="https://play-lh.googleusercontent.com/r1RyQV0Tva6dHjjLQ4xikDyc2uU9OMXxUmnvDM3edGwfBI6tZvDC9XGltno9pH-jkw" type="image/icon type">
     <style>
-        *{
-    box-sizing: border-box;
-}
-button{
-    cursor: pointer;
-    width: 100%;
-    padding:15px 0px;
-    border: none;
-}
-
-      #div1>div>  p{
-          cursor: pointer; 
-          font-size: 20px; 
-           padding:5px ;
-           margin-top:-20px; 
-          
+        * {
+            box-sizing: border-box;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         }
-        #div1>div>  p:hover{
-            background-color:#f9fafb;
+        
+        button {
+            cursor: pointer;
+            width: 100%;
+            padding: 15px 0px;
+            border: none;
         }
-        #div1{
+        
+        #div1>div>p {
+            cursor: pointer;
+            font-size: 20px;
+            padding: 5px;
+            margin-top: -20px;
+        }
+        
+        #div1>div>p:hover {
+            background-color: #f9fafb;
+        }
+        
+        #div1 {
             display: flex;
-            width:90%;
-            margin:auto;
+            width: 90%;
+            margin: auto;
         }
-        #div1>div:nth-child(1){
+        
+        #div1>div:nth-child(1) {
             /* background-color:gray; */
             margin-right: 10px;
-            width:25%;
+            width: 25%;
             /* border:1px solid black; */
         }
-        #div1>div>p:last-child{
+        
+        #div1>div>p:last-child {
             font-weight: bold;
-            color:#c7202c;
+            color: #c7202c;
         }
-        #div1>div:nth-child(2){
-       width:50%;
-       margin-right: 20px;
-       /* border:1px solid black; */
+        
+        #div1>div:nth-child(2) {
+            width: 50%;
+            margin-right: 20px;
+            /* border:1px solid black; */
         }
-        #div1>div:nth-child(2)>img{
-            width:100%;
+        
+        #div1>div:nth-child(2)>img {
+            width: 100%;
             /* height:100%; */
             cursor: pointer;
         }
-        #div1>div:nth-child(3){
-            width:22.5%;
+        
+        #div1>div:nth-child(3) {
+            width: 22.5%;
             text-align: center;
             /* border:1px solid red */
         }
-        #div1>div:nth-child(3)>div>p{
-           
-           font-size: 30px;
-           margin-bottom: -20px;
-       }
-        #div1>div:nth-child(3)>div:nth-child(1){
-            border:1px solid transparent;
+        
+        #div1>div:nth-child(3)>div>p {
+            font-size: 30px;
+            margin-bottom: -20px;
+        }
+        
+        #div1>div:nth-child(3)>div:nth-child(1) {
+            border: 1px solid transparent;
             height: 50%;
             background-color: #cee8ff;
             margin-bottom: 10px;
         }
-        #div1>div:nth-child(3)>div:nth-child(1)>img{
-            width:100%;
+        
+        #div1>div:nth-child(3)>div:nth-child(1)>img {
+            width: 100%;
             cursor: pointer;
         }
-        #div1>div:nth-child(3)>div:nth-child(2)>img{
-            width:100%;
+        
+        #div1>div:nth-child(3)>div:nth-child(2)>img {
+            width: 100%;
             margin-top: 50px;
             cursor: pointer;
         }
-        #div1>div:nth-child(3)>div:nth-child(2){
-       background-color:#eaeaea;
-       border:1px solid transparent;
-       height: 48%;
-
+        
+        #div1>div:nth-child(3)>div:nth-child(2) {
+            background-color: #eaeaea;
+            border: 1px solid transparent;
+            height: 48%;
         }
-        div+h2{
-    text-align: center;
-    margin:50px 
-}
-     
-#div2{
-        width:90%;
-        /* height: 100px; */
-        /* border: 1px solid red; */
-        margin:auto;
-        margin-bottom: 50px;
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
-        grid-template-rows: auto;
-        gap:10px;
-     }
-     /* #div2>div{
+        
+        div+h2 {
+            text-align: center;
+            margin: 50px
+        }
+        
+        #div2 {
+            width: 90%;
+            /* height: 100px; */
+            /* border: 1px solid red; */
+            margin: auto;
+            margin-bottom: 50px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: auto;
+            gap: 10px;
+        }
+        /* #div2>div{
         border: 1px solid black;
      } */
-     #div2>div>img{
-        width:100%;
-        cursor: pointer;
-     }
-     #div5{
-        width:90%;
-        /* height: 100px; */
-        /* border: 1px solid red; */
-        margin:auto;
-        margin-bottom: 50px;
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(1,auto);
-        gap:10px;
-     }
-    /* #div5>div>img{
+        
+        #div2>div>img {
+            width: 100%;
+            cursor: pointer;
+        }
+        
+        #div5 {
+            width: 90%;
+            /* height: 100px; */
+            /* border: 1px solid red; */
+            margin: auto;
+            margin-bottom: 50px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(1, auto);
+            gap: 10px;
+        }
+        /* #div5>div>img{
         width:100%;
         cursor: pointer;
      } */
         
-     #div6{
-        width:90%;
-        /* height: 100px; */
-        /* border: 1px solid red; */
-        margin:auto;
-        
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(1,auto);
-        gap:10px;
-     }
-     /* #div6>div{
+        #div6 {
+            width: 90%;
+            /* height: 100px; */
+            /* border: 1px solid red; */
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(1, auto);
+            gap: 10px;
+        }
+        /* #div6>div{
         border: 1px solid black;
      }
      #div5>div{
         border: 1px solid black;
      } */
-     #div5>div:nth-child(1)>img{
-        width:100%
-     }
-     #div6>div:nth-child(2)>img{
-        width:100%
-     }
-   /* #div6>div>  button{
+        
+        #div5>div:nth-child(1)>img {
+            width: 100%
+        }
+        
+        #div6>div:nth-child(2)>img {
+            width: 100%
+        }
+        /* #div6>div>  button{
     width:30%
    } */
-   p+button{
-    width:15%;
-    border: 1px solid gray;
-    border-radius: 5px;
-    background-color: transparent;
-   }
-
-#div3{
-        width:90%;
-        /* height: 100px; */
-        /* border: 1px solid red; */
-        margin:auto;
-        margin-bottom: 50px;
-        display: grid;
-        grid-template-columns: repeat(6,1fr);
-        grid-template-rows: auto;
-        gap:10px;
-     }
-     /* #div3>div{
+        
+        p+button {
+            width: 15%;
+            border: 1px solid gray;
+            border-radius: 5px;
+            background-color: transparent;
+        }
+        
+        #div3 {
+            width: 90%;
+            /* height: 100px; */
+            /* border: 1px solid red; */
+            margin: auto;
+            margin-bottom: 50px;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: auto;
+            gap: 10px;
+        }
+        /* #div3>div{
         border: 1px solid black;
      } */
-     #div3>div>img{
-        width:100%;
-        cursor: pointer;
-     }
-
-     #div8{
-         background-color:#545658; 
-      color:white;
-
-        /* border: 1px solid red; */
-        display: grid;
-        padding: 50px 0px 0px 80px;
-        grid-template-columns: repeat(4,1fr);
-        grid-template-rows: repeat(1,auto);
-     }
-     /* #div8>div{
+        
+        #div3>div>img {
+            width: 100%;
+            cursor: pointer;
+        }
+        
+        #div8 {
+            background-color: #545658;
+            color: white;
+            padding: 50px 0px 0px 80px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(1, auto);
+        }
+        
+        #div8>div>p {
+            margin-top: 15px;
+            font-size: 12px;
+        }
+        
+        #div8>div>p:first-child {
+            font-size: 14px;
+        }
+        
+        #div8>div {
+            padding-bottom: 30px;
+        }
+        
+        #div8>div>p>a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        #block9 {
+            width: 100%;
+            height: 90px;
+            display: flex;
+            background-color: rgb(61, 61, 69);
+        }
+        
+        #block9>div:first-child {
+            margin-top: 20px;
+            margin-left: 5%;
+            margin-top: 17px;
+            margin-right: 30%;
+            width: 30%;
+            color: white;
+        }
+        
+        #block9>div:last-child {
+            display: flex;
+            margin-top: 20px;
+        }
+        
+        #block9>div>p {
+            font-size: 12px;
+        }
+        
+        #block9>div>div {
+            font-size: 12px;
+            margin-top: 20px;
+            color: white;
+            margin-left: 20px;
+            display: flex;
+        }
+        
+        #block9>div>div>a {
+            text-decoration: none;
+            color: white;
+        }
+        
+        #block9>div>div>div>img {
+            max-width: 30px;
+            width: 100%;
+            margin-top: -5px;
+        }
+        
+        #block9>div>div>div>p {
+            margin-top: -1px;
+        }
+        
+        #lastindia>div>div>img {
+            max-width: 30px;
+            width: 100%;
+            margin-top: -5px;
+        }
+        
+        #lastindia>div>p>a {
+            color: white;
+            text-decoration: none;
+        }
+        /* #div8>div{
 
         border:1px solid black;
         
      } */
-     #rugs{
-        padding-top: 200px;
-        margin-left: 75px;
         
-        
-     }
-        
+        #rugs {
+            padding-top: 200px;
+            margin-left: 75px;
+        }
     </style>
 </head>
+
 <body>
     <h1 id="rugs">Home Decor</h1>
     <div id="div1">
         <div>
-       <h2>Featured Categories</h2>
-        <p id="p">Fireplaces</p>
-        <p>Window Treatments</p>
-        <p>Mirrors</p>
-        <p>Wall Art</p>
-        <p>Wall Decor</p>
-        <p>Throw Pillows</p>
-        <p>Cecoratives Accessories</p>
-        <p>Accent Pieces</p>
-        <p>Lighting</p>
-        <p>Doormats</p>
-        <p>Outdoor Decor</p>
-        <p>Rugs</p>
-        <p>Slipcovers & Furniture Covers</p>
-        <p>Shop All Home Decor on Sale</p>
-     
- </div>
+            <h2>Featured Categories</h2>
+            <p id="p">Fireplaces</p>
+            <p>Window Treatments</p>
+            <p>Mirrors</p>
+            <p>Wall Art</p>
+            <p>Wall Decor</p>
+            <p>Throw Pillows</p>
+            <p>Cecoratives Accessories</p>
+            <p>Accent Pieces</p>
+            <p>Lighting</p>
+            <p>Doormats</p>
+            <p>Outdoor Decor</p>
+            <p>Rugs</p>
+            <p>Slipcovers & Furniture Covers</p>
+            <p>Shop All Home Decor on Sale</p>
+
+        </div>
         <div>
             <img src="https://ak1.ostkcdn.com/img/mxc/03242022_SPRING2022_DECOR_Hero_Desktop.jpg?imwidth=680&impolicy=medium?imwidth=750" alt="">
         </div>
@@ -227,12 +320,12 @@ button{
                 <h1>Virtual Showroom</h1>
                 <img src="https://ak1.ostkcdn.com/img/mxc/2022-04-12-temporary-virtual-showcase.png?imwidth=384" alt="">
             </div>
-           <div>
-            <img src="https://ak1.ostkcdn.com/img/mxc/03242022_SPRING2022_DECOR_MM_022.png?imwidth=320&impolicy=medium?imwidth=384" alt="">
-          <p>Save on</p>
-          <h1>Rug Deals</h1>
-        </div>
-           
+            <div>
+                <img src="https://ak1.ostkcdn.com/img/mxc/03242022_SPRING2022_DECOR_MM_022.png?imwidth=320&impolicy=medium?imwidth=384" alt="">
+                <p>Save on</p>
+                <h1>Rug Deals</h1>
+            </div>
+
         </div>
     </div>
     <h2>Popular Home Decor Categories</h2>
@@ -242,23 +335,25 @@ button{
     <div id="div5">
         <div><img src="https://ak1.ostkcdn.com/img/mxc/03242022_SPRING2022_DECOR_688x444_BG01.jpg?imwidth=1024&impolicy=medium" alt=""></div>
         <div>
-        <h2>Biophilic Design: How to Restore Nature to Your Home</h2>
-        <p>If any design trend proves that your surroundings can improve your well-being, it’s biophilic interior design. This life-loving approach to decorating uses natural elements to restore your sense of wellness. Here are 10 easy, impactful ways to refresh your interior with resemblances to the great outdoors.</p>
-       <button>Read More</button>
+            <h2>Biophilic Design: How to Restore Nature to Your Home</h2>
+            <p>If any design trend proves that your surroundings can improve your well-being, it’s biophilic interior design. This life-loving approach to decorating uses natural elements to restore your sense of wellness. Here are 10 easy, impactful ways
+                to refresh your interior with resemblances to the great outdoors.</p>
+            <button>Read More</button>
+        </div>
+
     </div>
-       
-    </div>
-    
+
     <div id="div6">
         <div>
-        
+
             <h2>How to Decorate with a Monochromatic Color Scheme</h2>
-            <p>With a simple color palette leading the way, monochromatic design lets you get creative with textures, designs, and contrast. Take a look at three different rooms where we let one color take the wheel and show you how to create a monochromatic design in your own home.</p>
-           <button>Read More</button></div>
+            <p>With a simple color palette leading the way, monochromatic design lets you get creative with textures, designs, and contrast. Take a look at three different rooms where we let one color take the wheel and show you how to create a monochromatic
+                design in your own home.</p>
+            <button>Read More</button></div>
         <div>
             <img src="https://ak1.ostkcdn.com/img/mxc/03242022_SPRING2022_DECOR_688x444_BG02.jpg?imwidth=1024&impolicy=medium" alt="">
-    </div >
-       
+        </div>
+
     </div>
     <h2>Shop More Home Decor</h2>
     <div id="div3">
@@ -268,16 +363,28 @@ button{
         <div>
             <p>MY ACCOUNT</p>
             <p>Orders & Returns</p>
-            <p>Email Preferences</p>
+            <p>
+                <a href="https://www.overstock.com/5522/static.html">Email Preferences</a>
+            </p>
             <p>Account Settings</p>
         </div>
         <div>
             <p>LET US HELP</p>
-            <p>Contact Customer Care</p>
-            <p>Shipping Information</p>
-            <p>Return Policy</p>
-            <p>International Help</p>
-            <p>Accessibility</p>
+            <p>
+                <a href="https://help.overstock.com/help/s/article/International-Customer-Care">Contact Customer Care</a>
+            </p>
+            <p>
+                <a href="https://overstock.force.com/help/s/article/International-Order-Shipping-Information">Shipping Information</a>
+            </p>
+            <p>
+                <a href="https://help.overstock.com/help/s/article/International-Returns">Return Policy</a>
+            </p>
+            <p>
+                <a href="https://help.overstock.com/help/s/article/International-Help-Home">International Help</a>
+            </p>
+            <p>
+                <a href="https://www.overstock.com/accessibility">Accessibility</a>
+            </p>
         </div>
         <div>
             <p>COMPANY INFORMATION</p>
@@ -297,178 +404,191 @@ button{
             <p>New Arrivals</p>
         </div>
     </div>
+    <div id="block9">
+        <div>
+            <p>© Copyright 2022, Overstock.com®,Inc.</p>
+            <p>799 Colliseum Way Midvale, UT 84047 | 1-800-843-2446</p>
+        </div>
+        <div>
+            <div>
+                <a href="https://help.overstock.com/help/s/article/PRIVACY-AND-SECURITY-POLICY">Privacy Policy</a>
+            </div>
+            <div>
+                <a href="https://help.overstock.com/help/s/article/TERMS-AND-CONDITIONS">Terms & conditions</a>
+            </div>
+            <div>
+                <a href="https://www.overstock.com/88255/static.html">*Promotion Terms</a>
+            </div>
+            <div id="lastindia">
+                <div>
+                    <p>
+                        <a href="https://www.overstock.com/intlcountryselect">Ship to:</a>
+                    </p>
+                </div>
+                <div>
+                    <img src="https://ak1.ostkcdn.com/img/mxc/intFlag_IN.gif" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
 <script>
-     decorData=[
-        {
-            img:"https://ak1.ostkcdn.com/img/mxc/03242022_SPRING2022_DECOR_PopCat_1.jpg?imwidth=400&impolicy=medium",
-            button:"Outdoor Decor"
+    decorData = [{
+            img: "https://ak1.ostkcdn.com/img/mxc/03242022_SPRING2022_DECOR_PopCat_1.jpg?imwidth=400&impolicy=medium",
+            button: "Outdoor Decor"
         },
-    
+
         {
-            img:"https://ak1.ostkcdn.com/img/mxc/03242022_SPRING2022_DECOR_PopCat_2.jpg?imwidth=400&impolicy=medium",
-            button:"Mirrors"
+            img: "https://ak1.ostkcdn.com/img/mxc/03242022_SPRING2022_DECOR_PopCat_2.jpg?imwidth=400&impolicy=medium",
+            button: "Mirrors"
         },
-        
+
         {
-            img:"https://ak1.ostkcdn.com/img/mxc/03242022_SPRING2022_DECOR_PopCat_3.jpg?imwidth=400&impolicy=medium",
-            button:"Window Treatments"
+            img: "https://ak1.ostkcdn.com/img/mxc/03242022_SPRING2022_DECOR_PopCat_3.jpg?imwidth=400&impolicy=medium",
+            button: "Window Treatments"
         },
-        
+
         {
-            img:"https://ak1.ostkcdn.com/img/mxc/03242022_SPRING2022_DECOR_PopCat_4.jpg?imwidth=400&impolicy=medium",
-            button:"Wall Art"
+            img: "https://ak1.ostkcdn.com/img/mxc/03242022_SPRING2022_DECOR_PopCat_4.jpg?imwidth=400&impolicy=medium",
+            button: "Wall Art"
         },
-        
+
         {
-            img:"https://ak1.ostkcdn.com/img/mxc/03242022_SPRING2022_DECOR_PopCat_5.jpg?imwidth=400&impolicy=medium",
-            button:"Throw Pillows"
+            img: "https://ak1.ostkcdn.com/img/mxc/03242022_SPRING2022_DECOR_PopCat_5.jpg?imwidth=400&impolicy=medium",
+            button: "Throw Pillows"
         },
-        
+
         {
-            img:"https://ak1.ostkcdn.com/img/mxc/03242022_SPRING2022_DECOR_PopCat_6.jpg?imwidth=400&impolicy=medium",
-            button:"Wall Decor"
+            img: "https://ak1.ostkcdn.com/img/mxc/03242022_SPRING2022_DECOR_PopCat_6.jpg?imwidth=400&impolicy=medium",
+            button: "Wall Decor"
         },
-        
+
         {
-            img:"https://ak1.ostkcdn.com/img/mxc/03242022_SPRING2022_DECOR_PopCat_7.jpg?imwidth=400&impolicy=medium",
-            button:"Decorative Accessories"
+            img: "https://ak1.ostkcdn.com/img/mxc/03242022_SPRING2022_DECOR_PopCat_7.jpg?imwidth=400&impolicy=medium",
+            button: "Decorative Accessories"
         },
-        
+
         {
-            img:"https://ak1.ostkcdn.com/img/mxc/03242022_SPRING2022_DECOR_PopCat_8.jpg?imwidth=400&impolicy=medium",
-            button:"Accent Pieces"
-        },
-        {
-            img:"https://ak1.ostkcdn.com/img/mxc/03242022_SPRING2022_DECOR_PopCat_9.jpg?imwidth=400&impolicy=medium",
-            button:"Lightning"
-        },
-        {
-            img:"https://ak1.ostkcdn.com/img/mxc/03242022_SPRING2022_DECOR_PopCat_10.jpg?imwidth=400&impolicy=medium",
-            button:"Rugs"
-        },
-        {
-            img:"https://ak1.ostkcdn.com/img/mxc/03242022_SPRING2022_DECOR_PopCat_11.jpg?imwidth=400&impolicy=medium",
-            button:"Slipcovers & Furniture Covers"
-        },
-        {
-            img:"https://ak1.ostkcdn.com/img/mxc/03242022_SPRING2022_DECOR_PopCat_12.jpg?imwidth=400&impolicy=medium",
-            button:"Indoor Fireplaces"
+            img: "https://ak1.ostkcdn.com/img/mxc/03242022_SPRING2022_DECOR_PopCat_8.jpg?imwidth=400&impolicy=medium",
+            button: "Accent Pieces"
+        }, {
+            img: "https://ak1.ostkcdn.com/img/mxc/03242022_SPRING2022_DECOR_PopCat_9.jpg?imwidth=400&impolicy=medium",
+            button: "Lightning"
+        }, {
+            img: "https://ak1.ostkcdn.com/img/mxc/03242022_SPRING2022_DECOR_PopCat_10.jpg?imwidth=400&impolicy=medium",
+            button: "Rugs"
+        }, {
+            img: "https://ak1.ostkcdn.com/img/mxc/03242022_SPRING2022_DECOR_PopCat_11.jpg?imwidth=400&impolicy=medium",
+            button: "Slipcovers & Furniture Covers"
+        }, {
+            img: "https://ak1.ostkcdn.com/img/mxc/03242022_SPRING2022_DECOR_PopCat_12.jpg?imwidth=400&impolicy=medium",
+            button: "Indoor Fireplaces"
         },
     ]
 
-    decorData2=[
-        {
-            img:"https://ak1.ostkcdn.com/img/mxc/03232020-homedecor-otherPopular1.jpg?imwidth=200&impolicy=medium",
-            button:"Ceiling Lights"
+    decorData2 = [{
+            img: "https://ak1.ostkcdn.com/img/mxc/03232020-homedecor-otherPopular1.jpg?imwidth=200&impolicy=medium",
+            button: "Ceiling Lights"
         },
-    
+
         {
-            img:"https://ak1.ostkcdn.com/img/mxc/03232020-homedecor-otherPopular2.jpg?imwidth=200&impolicy=medium",
-            button:"Lamps"
+            img: "https://ak1.ostkcdn.com/img/mxc/03232020-homedecor-otherPopular2.jpg?imwidth=200&impolicy=medium",
+            button: "Lamps"
         },
-        
+
         {
-            img:"https://ak1.ostkcdn.com/img/mxc/03232020-homedecor-otherPopular3.jpg?imwidth=200&impolicy=medium",
-            button:"Flush Mounts"
+            img: "https://ak1.ostkcdn.com/img/mxc/03232020-homedecor-otherPopular3.jpg?imwidth=200&impolicy=medium",
+            button: "Flush Mounts"
         },
-        
+
         {
-            img:"https://ak1.ostkcdn.com/img/mxc/03232020-homedecor-otherPopular4.jpg?imwidth=200&impolicy=medium",
-            button:"Wall Lights"
+            img: "https://ak1.ostkcdn.com/img/mxc/03232020-homedecor-otherPopular4.jpg?imwidth=200&impolicy=medium",
+            button: "Wall Lights"
         },
-        
+
         {
-            img:"https://ak1.ostkcdn.com/img/mxc/03232020-homedecor-otherPopular5.jpg?imwidth=200&impolicy=medium",
-            button:"Ceiling Fans"
+            img: "https://ak1.ostkcdn.com/img/mxc/03232020-homedecor-otherPopular5.jpg?imwidth=200&impolicy=medium",
+            button: "Ceiling Fans"
         },
-        
+
         {
-            img:"https://ak1.ostkcdn.com/img/mxc/03232020-homedecor-otherPopular6.jpg?imwidth=200&impolicy=medium",
-            button:"Blinds & Shades"
+            img: "https://ak1.ostkcdn.com/img/mxc/03232020-homedecor-otherPopular6.jpg?imwidth=200&impolicy=medium",
+            button: "Blinds & Shades"
         },
-        
+
         {
-            img:"https://ak1.ostkcdn.com/img/mxc/03232020-homedecor-otherPopular7.jpg?imwidth=200&impolicy=medium",
-            button:"Curtain Rods & Hardware"
+            img: "https://ak1.ostkcdn.com/img/mxc/03232020-homedecor-otherPopular7.jpg?imwidth=200&impolicy=medium",
+            button: "Curtain Rods & Hardware"
         },
-        
+
         {
-            img:"https://ak1.ostkcdn.com/img/mxc/03232020-homedecor-otherPopular8.jpg?imwidth=200&impolicy=medium",
-            button:"Clocks"
-        },
-        {
-            img:"https://ak1.ostkcdn.com/img/mxc/03232020-homedecor-otherPopular9.jpg?imwidth=200&impolicy=medium",
-            button:"Decorative Shelves"
-        },
-        {
-            img:"https://ak1.ostkcdn.com/img/mxc/03232020-homedecor-otherPopular10.jpg?imwidth=200&impolicy=medium",
-            button:"Silk Pants"
-        },
-        {
-            img:"https://ak1.ostkcdn.com/img/mxc/03232020-homedecor-otherPopular11.jpg?imwidth=200&impolicy=medium",
-            button:"Vases"
-        },
-        {
-            img:"https://ak1.ostkcdn.com/img/mxc/03232020-homedecor-otherPopular12.jpg?imwidth=200&impolicy=medium",
-            button:"Picture Frames & Albums"
-        },
-        {
-            img:"https://ak1.ostkcdn.com/img/mxc/03232020-homedecor-otherPopular13.jpg?imwidth=200&impolicy=medium",
-            button:"Door Mats"
-        },
-        {
-            img:"https://ak1.ostkcdn.com/img/mxc/03232020-homedecor-otherPopular14.jpg?imwidth=200&impolicy=medium",
-            button:"Canvas Art"
-        },
-        {
-            img:"https://ak1.ostkcdn.com/img/mxc/03232020-homedecor-otherPopular15.jpg?imwidth=200&impolicy=medium",
-            button:"Prints"
-        },
-        {
-            img:"https://ak1.ostkcdn.com/img/mxc/03232020-homedecor-otherPopular16.jpg?imwidth=200&impolicy=medium",
-            button:"Fire Pits & Chimineas"
-        },
-        {
-            img:"https://ak1.ostkcdn.com/img/mxc/03232020-homedecor-otherPopular17.jpg?imwidth=200&impolicy=medium",
-            button:"Planters, Hangers, & Stands"
-        },
-        {
-            img:"https://ak1.ostkcdn.com/img/mxc/071718_sale_square.svg",
-            button:"Shop All Home Decor on Sale"
+            img: "https://ak1.ostkcdn.com/img/mxc/03232020-homedecor-otherPopular8.jpg?imwidth=200&impolicy=medium",
+            button: "Clocks"
+        }, {
+            img: "https://ak1.ostkcdn.com/img/mxc/03232020-homedecor-otherPopular9.jpg?imwidth=200&impolicy=medium",
+            button: "Decorative Shelves"
+        }, {
+            img: "https://ak1.ostkcdn.com/img/mxc/03232020-homedecor-otherPopular10.jpg?imwidth=200&impolicy=medium",
+            button: "Silk Pants"
+        }, {
+            img: "https://ak1.ostkcdn.com/img/mxc/03232020-homedecor-otherPopular11.jpg?imwidth=200&impolicy=medium",
+            button: "Vases"
+        }, {
+            img: "https://ak1.ostkcdn.com/img/mxc/03232020-homedecor-otherPopular12.jpg?imwidth=200&impolicy=medium",
+            button: "Picture Frames & Albums"
+        }, {
+            img: "https://ak1.ostkcdn.com/img/mxc/03232020-homedecor-otherPopular13.jpg?imwidth=200&impolicy=medium",
+            button: "Door Mats"
+        }, {
+            img: "https://ak1.ostkcdn.com/img/mxc/03232020-homedecor-otherPopular14.jpg?imwidth=200&impolicy=medium",
+            button: "Canvas Art"
+        }, {
+            img: "https://ak1.ostkcdn.com/img/mxc/03232020-homedecor-otherPopular15.jpg?imwidth=200&impolicy=medium",
+            button: "Prints"
+        }, {
+            img: "https://ak1.ostkcdn.com/img/mxc/03232020-homedecor-otherPopular16.jpg?imwidth=200&impolicy=medium",
+            button: "Fire Pits & Chimineas"
+        }, {
+            img: "https://ak1.ostkcdn.com/img/mxc/03232020-homedecor-otherPopular17.jpg?imwidth=200&impolicy=medium",
+            button: "Planters, Hangers, & Stands"
+        }, {
+            img: "https://ak1.ostkcdn.com/img/mxc/071718_sale_square.svg",
+            button: "Shop All Home Decor on Sale"
         }
-      
+
     ]
 
-     displayDecor(decorData)
-    function displayDecor(data){
-     decorData.forEach(function(el){
-        let div2 = document.querySelector('#div2');
-        
-        let div = document.createElement('div');
-        let image = document.createElement('img');
-        image.src=el.img
-        let butto = document.createElement('button');
-        butto.innerText=el.button;
-        div.append(image,butto)
-         div2.append(div)
-     })
-}
+    displayDecor(decorData)
 
-displayHomeDecor(decorData2)
-    function displayHomeDecor(data){
-     decorData2.forEach(function(el){
-        let div2 = document.querySelector('#div3');
-        
-        let div = document.createElement('div');
-        let image = document.createElement('img');
-        image.src=el.img
-        let butto = document.createElement('button');
-        butto.innerText=el.button;
-        div.append(image,butto)
-         div2.append(div)
-     })
-}
- 
+    function displayDecor(data) {
+        decorData.forEach(function(el) {
+            let div2 = document.querySelector('#div2');
+
+            let div = document.createElement('div');
+            let image = document.createElement('img');
+            image.src = el.img
+            let butto = document.createElement('button');
+            butto.innerText = el.button;
+            div.append(image, butto)
+            div2.append(div)
+        })
+    }
+
+    displayHomeDecor(decorData2)
+
+    function displayHomeDecor(data) {
+        decorData2.forEach(function(el) {
+            let div2 = document.querySelector('#div3');
+
+            let div = document.createElement('div');
+            let image = document.createElement('img');
+            image.src = el.img
+            let butto = document.createElement('button');
+            butto.innerText = el.button;
+            div.append(image, butto)
+            div2.append(div)
+        })
+    }
 </script>
